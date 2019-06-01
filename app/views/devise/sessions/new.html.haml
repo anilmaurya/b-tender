@@ -1,0 +1,18 @@
+.row.justify-content-center
+  .col-md-8
+    .card-group
+      .card.p-4
+        .card-body
+          %h1 Login
+          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            %p.text-muted Sign In to your account
+            .field
+              = f.label :email
+              = f.email_field :email, autofocus: true, autocomplete: "email"
+            .field
+              = f.label :password
+              = f.password_field :password, autocomplete: "current-password"
+            .row
+              .col-6
+                = f.submit "Log in"
+            = render "devise/shared/links"

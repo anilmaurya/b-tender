@@ -1,0 +1,11 @@
+- if user_signed_in?
+  %nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+    %ul.navbar-nav
+      %li.nav-item.active
+        %a.nav-link{:href => "#"} Home
+      %li.nav-item
+        %a.nav-link{:href => "#"} Tenders
+      %li.nav-item
+        %a.nav-link{:href => "#"} Users
+      %li.nav-item
+        .nav-link= link_to('Logout', destroy_user_session_path) 
