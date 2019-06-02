@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Problem Statement:
 
-Things you may want to cover:
+Government releases Tender for work, companies bid to get work. There is possibility of manipulating bid from back-end system.
 
-* Ruby version
+### Solution:
 
-* System dependencies
+This application which will store Tender & Bid on Blockchain then using Smart Contract decide which company win bidding.
 
-* Configuration
+### Approach
 
-* Database creation
+If backend need to transact on blockchain then it will require public key, private key & address
+of users. Storing private_key in database OR sending through network is not ideal.
 
-* Database initialization
+At the moment I think this approach (backend transacting on blockchain) is good for those
+application where user's interaction data is not stored on blockchain.
+Example application: storing logs on blockchain for audit purpose.
 
-* How to run the test suite
+### Alternative
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I will be developing JavaScript Application which will interact with blockchain from browser.
